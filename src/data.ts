@@ -1,0 +1,91 @@
+import { FieldTypes, Form } from "./interfaces";
+
+const forms: Form[] = [
+  {
+    country: "mexico",
+    fields: [
+      {
+        type: FieldTypes.Text,
+        name: "firstName",
+        label: "Nombre",
+        defaultValue: "valor",
+        placeholder: "Escribe tu nombre",
+      },
+      {
+        type: FieldTypes.Text,
+        name: "lastName",
+        label: "Apellido",
+        defaultValue: "valor",
+        placeholder: "Escribe tu apellido",
+      },
+      {
+        type: FieldTypes.Select,
+        name: "state",
+        label: "Estado",
+        value: [
+          "Aguascalientes",
+          "Baja California",
+          "Baja California Sur",
+          "Campeche",
+          "Chiapas",
+          "Chihuahua",
+          "Coahuila de Zaragoza",
+          "Colima",
+          "Ciudad de México",
+          "Durango",
+          "Guanajuato",
+          "Guerrero",
+          "Hidalgo",
+          "Jalisco",
+          "Estado de Mexico",
+          "Michoacan de Ocampo",
+          "Morelos",
+          "Nayarit",
+          "Nuevo Leon",
+          "Oaxaca",
+          "Puebla",
+          "Queretaro de Arteaga",
+          "Quintana Roo",
+          "San Luis Potosi",
+          "Sinaloa",
+          "Sonora",
+          "Tabasco",
+          "Tamaulipas",
+          "Tlaxcala",
+          "Veracruz de Ignacio de la Llave",
+          "Yucatan",
+          "Zacatecas",
+        ],
+        placeholder: "Selecciona tu estado",
+      },
+    ],
+  },
+  {
+    country: "colombia",
+    fields: [
+      {
+        type: FieldTypes.Text,
+        name: "firstName",
+        label: "Nombre",
+        defaultValue: "valor",
+        placeholder: "Escribe tu nombre",
+      },
+      {
+        type: FieldTypes.Text,
+        name: "lastName",
+        label: "Apellido",
+        defaultValue: "valor",
+        placeholder: "Escribe tu apellido",
+      },
+      {
+        type: FieldTypes.Number,
+        name: "age",
+        label: "Edad",
+        defaultValue: 35,
+        placeholder: "Ingresa tu edad",
+      },
+    ],
+  },
+];
+
+export default forms;
