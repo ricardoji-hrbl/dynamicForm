@@ -8,6 +8,12 @@ import forms from "./data";
 // Components
 import DynamicForm from "./components/DynamicForm";
 
+/**
+ * This component handle the data to generate the desired form: using the state here to detect the change of country
+ *
+ * @function
+ *
+ */
 function App() {
   const [formData, setFormData] = useState<Form | null>(null);
 

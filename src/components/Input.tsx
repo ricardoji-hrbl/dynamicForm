@@ -5,6 +5,13 @@ interface props {
   fieldData: Field;
 }
 
+/**
+ * Handle the input type with a inline switch
+ *
+ * @function
+ * @param {Field} fieldData - Contents all the data to generate the field.
+ *
+ */
 const Input: FC<props> = ({ fieldData }): JSX.Element => {
   return (
     <>

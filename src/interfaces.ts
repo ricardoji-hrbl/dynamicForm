@@ -1,3 +1,7 @@
+/**
+ * Use proptypes here instead
+ *
+ */
 export enum FieldTypes {
   Text,
   Number,
